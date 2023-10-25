@@ -50,7 +50,7 @@ function PasswordBox(props, ref) {
     return ( 
         <>
             <div className="pswdbox_label">
-                Choose a password
+                Crie uma senha
                 <span className="psswd_len">
                     {pswd.length}
                 </span>

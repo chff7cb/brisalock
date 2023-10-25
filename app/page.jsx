@@ -119,13 +119,13 @@ export default function Home(){
                     alt=""
                 />
                 <div className={styles.title_text}>                
-                    QuirkyLock
+                    BrisaLock
                 </div>
             </div>
             
                         
             <PasswordBox pswd={pswd} setPswd={setPswdAndCheckRules} ref={pswdBoxRef}/>
-            <div>level: {max_unlocked_rules.current}</div>
+            <div>Nível: {max_unlocked_rules.current}</div>
             <div ref={aaParent}>
                 {allSolved && <RuleBox 
                     heading={"Congratulations!"} 
@@ -136,7 +136,7 @@ export default function Home(){
                     return(
                         <RuleBox 
                             key={r.num} 
-                            heading={`Rule ${r.num}`} 
+                            heading={`Requisito ${r.num}`} 
                             msg={r.msg} 
                             correct={r.correct} 
                             renderItem={r.renderItem}
@@ -147,12 +147,6 @@ export default function Home(){
             </div>
 
         </div>
-        <footer className={styles.footer}>
-            Check out the <a href="https://github.com/sayantanDs/quirkylock" target="_blank">GitHub</a> for this project. <br/>
-            This site is heavily inspired by&nbsp;
-            <a href="https://neal.fun/password-game/" target="_blank">The Password Game</a> by&nbsp;
-            <a href="https://twitter.com/nealagarwal" target="_blank">Neal</a>
-        </footer>
         </>
       )
 }
