@@ -13,12 +13,7 @@ body {
     --bgSize: 1.35rem;
     --bgPosition: calc(var(--bgSize) / 2);
 
-    background-image: radial-gradient(
-        circle at center,
-        var(--color) var(--dotSize),
-        transparent 0
-        ), radial-gradient(circle at center, var(--color) var(--dotSize), transparent 0);
-    background-size: var(--bgSize) var(--bgSize);
+    background-image: url('https://cdn1.vectorstock.com/i/1000x1000/99/40/happy-halloween-seamless-background-wallpaper-vector-21629940.jpg');
     background-position: 0 0, var(--bgPosition) var(--bgPosition);
     
 }
