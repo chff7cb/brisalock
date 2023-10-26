@@ -56,10 +56,10 @@ var rules = [
     new RuleMorse(),
     new RuleLocation(),
     new RuleRiddle(),
-    new Rule(
-        "A senha deve conter a mesma quantidade de vogais e consoantes.",
-        (t) => (t.match(/[aeiou]/ig) || []).length === (t.match(/[bcdfghjklmnpqrstvxs]/ig) || []).length
-    ),
+    // new Rule(
+    //     "A senha deve conter a mesma quantidade de vogais e consoantes.",
+    //     (t) => (t.match(/[aeiou]/ig) || []).length === (t.match(/[bcdfghjklmnpqrstvxs]/ig) || []).length
+    // ),
     new RuleSlidingPuzzle(),
     new Rule(
         "A senha deve conter o numero de caracteres da senha.",
